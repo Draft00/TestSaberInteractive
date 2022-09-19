@@ -22,12 +22,12 @@ namespace UnitTest1
             }
             testListSer.setRandNode();
 
-            std::ofstream outFile("Serialize.txt");
+            std::ofstream outFile("Serialize.txt", std::ios::binary);
             testListSer.Serialize(outFile);
             outFile.close();
 
             List testListDeser;
-            std::ifstream inFile("Serialize.txt");
+            std::ifstream inFile("Serialize.txt", std::ios::binary);
             testListDeser.Deserialize(inFile);
             inFile.close();
 
