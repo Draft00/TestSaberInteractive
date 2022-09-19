@@ -15,17 +15,6 @@ void BinaryRepresentation<T>::printBinaryRepresentation(T number)
 			std::cout << ((number & i) ? 1 : 0);
 		}
 		std::cout << std::endl; 
-		////if (number < 0)
-		//const isNegative = number < 0;
-		//std::stack<bool> bitStack; 
-		//while (number >= 1) {
-		//	bitStack.push(number & 1);
-		//	number = number >> 1;
-		//}
-		//while (!bitStack.empty()) {
-		//	std::cout << bitStack.top();
-		//	bitStack.pop();
-		//}
 	}
 	else {
 		std::cout << "Non-signed non-integral value not supported yet." << std::endl; 
